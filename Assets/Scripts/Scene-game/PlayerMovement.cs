@@ -51,8 +51,8 @@ public class PlayerMovement : MonoBehaviour
                 this.lastMousePos.x * Settings.sensitivity, 0);
             lastMousePos = new Vector3(transform.eulerAngles.x + lastMousePos.x,
                 playerCam.transform.eulerAngles.y + lastMousePos.y, 0);
-            transform.rotation = Quaternion.Euler(0, lastMousePos.x,0);
-            playerCam.transform.rotation = Quaternion.Euler(0,0,0);
+            //transform.rotation = Quaternion.Euler(0, lastMousePos.x,0);
+            playerCam.transform.rotation = Quaternion.Euler(lastMousePos.x,lastMousePos.y,0);
             lastMousePos = mpos;
 
 
