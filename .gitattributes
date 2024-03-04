@@ -1,0 +1,2 @@
+/library/PackageCache/* filter=lfs diff=lfs merge=lfs -text
+*.gylib filter=lfs diff=lfs merge=lfs -text
